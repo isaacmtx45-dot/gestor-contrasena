@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Nada de fuera: ni letras de Google, ni scripts de terceros, ni conexiones
+     salvo el propio programa y el puente con el lanzador (ipc). Aquí se van a
+     ver contraseñas descifradas: un script ajeno las podría leer (P-05, regla 3). -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://www.googleapis.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Gestor de contraseñas</title>
+<link rel="stylesheet" href="estilos.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icono-192.png">
+<link rel="apple-touch-icon" href="icono-192.png">
+<meta name="theme-color" content="#0b1628">
+</head>
+<body>
+<main id="app"></main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
